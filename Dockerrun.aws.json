@@ -1,0 +1,31 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "volumes": [],
+  "containerDefinitions": [
+    {
+      "name": "cenitodoo",
+      "image": "dhbahr/odoo-saas",
+      "environment": [
+        {
+          "name": "MAIN_DOMAIN",
+          "value": "cenitodoo.com"
+        },
+        {
+          "name": "SERVER_SUBDOMAIN",
+          "value": "server.cenitodoo.com"
+        }
+      ],
+      "essential": true,
+      "memory": 300,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 8069,
+          "protocol": "tcp"
+        }
+      ],
+      "links": [],
+      "mountPoints": []
+    }
+  ]
+}
