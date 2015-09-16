@@ -13,6 +13,10 @@
         {
           "name": "SERVER_SUBDOMAIN",
           "value": "server.cenitodoo.com"
+        },
+        {
+          "name": "CUSTOM_MODULES",
+          "value": "https://github.com/dhbahr/odoo-cenit.git"
         }
       ],
       "essential": true,
