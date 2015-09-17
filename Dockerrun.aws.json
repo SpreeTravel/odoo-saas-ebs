@@ -16,7 +16,7 @@
         },
         {
           "name": "CUSTOM_MODULES",
-          "value": "https://github.com/dhbahr/odoo-cenit.git"
+          "value": "https://github.com/dhbahr/odoo-cenit.git https://github.com/dhbahr/odoo-integrations.git"
         }
       ],
       "essential": true,
