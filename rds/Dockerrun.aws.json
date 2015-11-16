@@ -15,8 +15,8 @@
           "value": "server.cenitodoo.com"
         },
         {
-          "name": "CUSTOM_MODULES",
-          "value": "https://github.com/dhbahr/odoo-cenit.git https://github.com/dhbahr/odoo-integrations.git"
+          "name": "CUSTOM_REPOS",
+          "value": "https://github.com/openjaf/odoo-cenit.git https://github.com/openjaf/odoo-integrations.git"
         }
       ],
       "essential": true,
