@@ -1,0 +1,35 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "volumes": [],
+  "containerDefinitions": [
+    {
+      "name": "ceniterp-info",
+      "image": "cenitsaas/cenitodoo",
+      "environment": [
+        {
+          "name": "MAIN_DOMAIN",
+          "value": "www.ceniterp.info"
+        },
+        {
+          "name": "SERVER_SUBDOMAIN",
+          "value": "server.ceniterp.info"
+        },
+        {
+          "name": "CUSTOM_REPOS",
+          "value": "https://github.com/dhbahr/odoo-cenit.git https://github.com/dhbahr/odoo-integrations.git"
+        }
+      ],
+      "essential": true,
+      "memory": 300,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 8069,
+          "protocol": "tcp"
+        }
+      ],
+      "links": [],
+      "mountPoints": []
+    }
+  ]
+}

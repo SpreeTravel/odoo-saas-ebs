@@ -19,8 +19,9 @@ or *environment*.
   + Select *web server tier*
   + When prompted for the application upload the zip file just
   created.
-  + Instruct the wizard to launch a new **RDS** instance with the
-  environment.
+  + If (only if) using the **rds** version:
+    - Instruct the wizard to launch a new **RDS** instance with the
+      environment.
     - For the **RDS** instance select a *PostgreSQL* server.
 6. With your DNS provider (**GoDaddy** or **Amazon Route 53**)
 create *CNAME* rules so that your **MAIN_DOMAIN** and

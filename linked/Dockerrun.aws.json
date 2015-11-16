@@ -3,6 +3,25 @@
   "volumes": [],
   "containerDefinitions": [
     {
+      "name": "db",
+      "image": "postgres",
+      "environment": [
+        {
+          "name": "POSTGRES_USER",
+          "value": "odoo"
+        },
+        {
+          "name": "POSTGRES_PASSWORD",
+          "value": "odoo"
+        }
+      ],
+      "essential": true,
+      "memory": 300,
+      "portMappings": [],
+      "links": [],
+      "mountPoints": []
+    },
+    {
       "name": "cenitodoo",
       "image": "cenitsaas/cenitodoo",
       "environment": [
@@ -28,7 +47,9 @@
           "protocol": "tcp"
         }
       ],
-      "links": [],
+      "links": [
+          "db"
+      ],
       "mountPoints": []
     }
   ]
