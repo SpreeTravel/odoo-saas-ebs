@@ -3,20 +3,20 @@
   "volumes": [],
   "containerDefinitions": [
     {
-      "name": "ceniterp-info",
+      "name": "cenitodoo",
       "image": "cenitsaas/cenitodoo",
       "environment": [
         {
           "name": "MAIN_DOMAIN",
-          "value": "www.ceniterp.info"
+          "value": "cenitodoo.com"
         },
         {
           "name": "SERVER_SUBDOMAIN",
-          "value": "server.ceniterp.info"
+          "value": "server.cenitodoo.com"
         },
         {
           "name": "CUSTOM_REPOS",
-          "value": "https://github.com/dhbahr/odoo-cenit.git https://github.com/dhbahr/odoo-integrations.git"
+          "value": "https://github.com/openjaf/odoo-cenit.git https://github.com/openjaf/odoo-integrations.git"
         }
       ],
       "essential": true,
